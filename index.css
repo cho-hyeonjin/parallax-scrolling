@@ -1,15 +1,31 @@
-body {
-  height: 200vh;
+#parallax-wrapper {
+  height: 100vh;
+
+  overflow-x: hidden;
+  perspective: 1px;
 }
 
-div {
-  height: 100px;
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-#div-1 {
-  background-color: red;
+#parallax-A {
+  background-color: salmon;
+  height: 150rem;
 }
 
-#div-2 {
-  background-color: blue;
+#parallax-B {
+  background-color: white;
+  height: 500px;
+  transform: translateZ(-2px);
+}
+
+#parallax-C {
+  top: 300px;
+  background-color: #5cffd1;
+  height: 500px;
+  transform: translateZ(-1px);
 }
